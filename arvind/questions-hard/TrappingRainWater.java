@@ -19,9 +19,21 @@ public class TrappingRainWater {
     	}
     	return ans; 
     }
-	
-    public int trap_dp(){
-		return 0;
-    	
+	//dp solution with only one array, one extra variable.
+    public static int trap_dp(int[] height){
+	    	if(height.length <= 2) return 0;
+			int[] ans = new int[height.length];
+			ans[0] = height[0];
+			for(int i=1;i<height.length;i++){
+			   ans[i]= Math.max(ans[i-1], height[i]);
+			}
+			
+	    	int res =0;
+	    	int rightmax = height[height.length - 1];
+			for(int i=height.length-2;i>=0;i--){
+				rightmax = Math.max(rightmax, height[i]) ;
+				res+= Math.min(ans[i], rightmax) - height[i];
+			}
+			return res; 
     }
 }
