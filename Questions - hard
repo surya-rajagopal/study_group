@@ -1,14 +1,20 @@
+***************************************************************************************************************************
+
 Question 1: https://leetcode.com/problems/trapping-rain-water/description/
 Given n non-negative integers representing an elevation map where the width of each bar is 1, 
 compute how much water it is able to trap after raining.
 Input: [0,1,0,2,1,0,1,3,2,1,2,1]
 Output: 6
-
+***************************************************************************************************************************
 
 Question 2. https://leetcode.com/problems/integer-to-english-words/description/
 Convert a non-negative integer to its english words representation. Given input is guaranteed to be less than 231 - 1.
 Input: 123
 Output: "One Hundred Twenty Three"
-
 Input: 1234567
 Output: "One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven"
+
+***************************************************************************************************************************
+Question 3 : Remove the minimum number of invalid parentheses in order to make the input string valid. Return all possible results.
+https://leetcode.com/problems/remove-invalid-parentheses/description/
+***************************************************************************************************************************
